@@ -1,9 +1,25 @@
-# React + Vite
+# PayPal Calculator (React.js)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple PayPal fee calculator built with React.js.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# Paypal-calculator-reactjs
+The PayPal Calculator allows you to calculate PayPal fees based on the sale amount and currency. It provides you with the amount you will receive after PayPal fees and the amount you should ask for to receive your desired value.
+
+## Usage
+
+To use this calculator, follow these steps:
+
+1. Clone the project from GitHub:
+   ```sh
+   git clone https://github.com/prantikseal/Paypal-calculator-reactjs.git``
+2. Navigate to the Project Directory -> After cloning the project, navigate to the project directory by running:
+    ```sh
+   cd Paypal-calculator-reactjs
+3. Install Dependencies: Before running the application, you need to install its dependencies. You can do this by running:
+   
+   ```sh
+   npm install
+4. Start the development server:
+      ```sh
+    npm run dev
