@@ -21,5 +21,12 @@ To use this calculator, follow these steps:
    ```sh
    npm install
 4. Start the development server:
-      ```sh
+      ```
     npm run dev
+   ```
+5. To Build it production ready
+         ```sh
+    npm run build```
+7. Deploy folder
+```dist```
+
