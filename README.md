@@ -25,7 +25,7 @@ To use this calculator, follow these steps:
     npm run dev
    ```
 5. To Build it production ready
-         ```sh
+         ```
     npm run build```
 7. Deploy folder
 ```dist```
