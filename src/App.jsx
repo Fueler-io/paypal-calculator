@@ -2,7 +2,7 @@ import { useState } from "react";
 import CTA from "./components/CTA";
 
 function getRandomColor() {
-  const colors = ['#DEE2FF', '#E4F5FE', '#F0F7E2', '#FFFEE3'];
+  const colors = ["#DEE2FF", "#E4F5FE", "#F0F7E2", "#FFFEE3"];
   const randomIndex = Math.floor(Math.random() * colors.length);
   return colors[randomIndex];
 }
@@ -30,7 +30,7 @@ function App() {
   };
 
   const calculateFees = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     const fixedFee = 0.3;
 
     if (isNaN(saleAmount)) {
@@ -65,24 +65,26 @@ function App() {
     });
   };
 
-  const resetAmount = (e) =>{
+  const resetAmount = (e) => {
     e.preventDefault();
     setSaleAmount(0);
-    setCurrency('USD');
+    setCurrency("USD");
     setPaypalFees(0);
     setCalculatedFees({
       feeAmount: 0,
       amountAfterFees: 0,
       amountToAsk: 0,
-      saleValue: 0
-      })
-  }
-
+      saleValue: 0,
+    });
+  };
 
   return (
     <>
       <div className="min-h-screen flex flex-col items-center justify-center mx-5">
-        <div className="container rounded-3xl w-full max-w-5xl p-12 md:p-20 mx-4 my-16" style={{ backgroundColor: bgColor }}>
+        <div
+          className="container rounded-3xl w-full max-w-5xl p-12 md:p-20 mx-4 my-16"
+          style={{ backgroundColor: bgColor }}
+        >
           <section className="calculator-section flex-wrap lg:flex-nowrap flex gap-12 ">
             <div className="input-section w-full xl:w-1/2">
               <h2 className="text-[#0D0543] font-semibold text-4xl md:text-6xl leading-[48px] md:leading-[72px] whitespace-nowrap text-center md:text-left">
@@ -146,7 +148,10 @@ function App() {
                   />
                 </div>
                 <div className="mt-14 flex flex-col md:flex-row gap-4">
-                  <button className="rounded-lg bg-[#0D0543] px-5 py-4 w-full md:w-auto grid place-items-center" onClick={resetAmount}>
+                  <button
+                    className="rounded-lg bg-[#0D0543] px-5 py-4 w-full md:w-auto grid place-items-center"
+                    onClick={resetAmount}
+                  >
                     <svg
                       width="24"
                       height="24"
@@ -163,7 +168,10 @@ function App() {
                       ></path>
                     </svg>
                   </button>
-                  <button className="rounded-lg bg-[#0D0543] text-white font-medium text-lg leading-[28px] tracking-[-0.64px] px-10 py-4 w-full md:w-auto" onClick={calculateFees}>
+                  <button
+                    className="rounded-lg bg-[#0D0543] text-white font-medium text-lg leading-[28px] tracking-[-0.64px] px-10 py-4 w-full md:w-auto"
+                    onClick={calculateFees}
+                  >
                     Calculate Fees
                   </button>
                 </div>
@@ -199,11 +207,11 @@ function App() {
             </div>
           </section>
         </div>
-              <div className="max-w-5xl mb-12">
-        <section className="cta-section">
-              <CTA />
-        </section>
-      </div>
+        <div className="max-w-5xl mb-12">
+          <section className="cta-section">
+            <CTA />
+          </section>
+        </div>
       </div>
     </>
   );
