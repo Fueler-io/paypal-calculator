@@ -1,4 +1,5 @@
 import { useState } from "react";
+import CTA from "./components/CTA";
 
 function getRandomColor() {
   const colors = ['#DEE2FF', '#E4F5FE', '#F0F7E2', '#FFFEE3'];
@@ -80,7 +81,7 @@ function App() {
 
   return (
     <>
-      <div className="min-h-screen flex items-center justify-center">
+      <div className="min-h-screen flex flex-col items-center justify-center mx-5">
         <div className="container rounded-3xl w-full max-w-5xl p-12 md:p-20 mx-4 my-16" style={{ backgroundColor: bgColor }}>
           <section className="calculator-section flex-wrap lg:flex-nowrap flex gap-12 ">
             <div className="input-section w-full xl:w-1/2">
@@ -198,6 +199,11 @@ function App() {
             </div>
           </section>
         </div>
+              <div className="max-w-5xl mb-12">
+        <section className="cta-section">
+              <CTA />
+        </section>
+      </div>
       </div>
     </>
   );
